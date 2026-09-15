@@ -5,7 +5,11 @@ from flask import Flask, render_template, jsonify, request, session
 app = Flask(__name__)
 app.secret_key = "dev-secret-change-me"
 
-QUIZZES_DIR = Path("quizzes")
+# Абсолютный путь к папке с викторинами.
+# BASE_DIR — это папка, где лежит сам app.py (например, /home/Fixius/MyVibeCoding).
+# Так работает и локально, и на PythonAnywhere, и на любом другом хостинге.
+BASE_DIR = Path(__file__).resolve().parent
+QUIZZES_DIR = BASE_DIR / "quizzes"
 
 # Загружаем все викторины при старте.
 # Структура: {"metro": [вопросы...], "construction": [вопросы...]}
