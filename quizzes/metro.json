@@ -1,0 +1,79 @@
+[
+  {
+    "question": "Какая станция московского метро является самой глубокой?",
+    "options": [
+      "Маяковская",
+      "Парк Победы",
+      "ВДНХ",
+      "Арбатская"
+    ],
+    "answer": "Парк Победы",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Moscow%20Metro%20Park%20Pobedy%202003-05-06%20opening%20day%2002.jpg"
+  },
+  {
+    "question": "На какой станции установлены знаменитые 76 бронзовых скульптур?",
+    "options": [
+      "Площадь Революции",
+      "Комсомольская",
+      "Киевская",
+      "Театральная"
+    ],
+    "answer": "Площадь Революции",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metro%20MSK%20Transfer%20Ploshchad%20Revolyutsii%20to%20Teatralnaya.jpg"
+  },
+  {
+    "question": "Какая линия московского метро обозначается коричневым цветом на схеме?",
+    "options": [
+      "Сокольническая",
+      "Кольцевая",
+      "Замоскворецкая",
+      "Калужско-Рижская"
+    ],
+    "answer": "Кольцевая",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MosMetro%20KomsomolskayaKL%20img2%20asv2018-01.jpg"
+  },
+  {
+    "question": "Какая станция стала одной из первых открытых станций метро в 1935 году?",
+    "options": [
+      "Сокольники",
+      "Таганская",
+      "Курская",
+      "Новослободская"
+    ],
+    "answer": "Сокольники",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metro%20MSK%20Line1%20Sokolniki.jpg"
+  },
+  {
+    "question": "На какой станции установлены 32 витража с подсветкой изнутри?",
+    "options": [
+      "Новослободская",
+      "Белорусская",
+      "Павелецкая",
+      "Кропоткинская"
+    ],
+    "answer": "Новослободская",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metro%20MSK%20Line5%20Novoslobodskaya.jpg"
+  },
+  {
+    "question": "Какая станция метро считается самой красивой и часто называется «подземным дворцом»?",
+    "options": [
+      "Комсомольская",
+      "Маяковская",
+      "Киевская",
+      "Новослободская"
+    ],
+    "answer": "Маяковская",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Moscow%20-%20June%202026%20-%20Mayakovskaya%20metro%20station.jpg"
+  },
+  {
+    "question": "На какой станции находится самый длинный эскалатор в московском метро?",
+    "options": [
+      "Парк Победы",
+      "Комсомольская",
+      "Киевская",
+      "Площадь Революции"
+    ],
+    "answer": "Парк Победы",
+    "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Park%20Pobedy%20Arbatsko-Pokrovskaya%20Line%20Moscow%20Metro%20escalator.jpg"
+  }
+]
