@@ -8,12 +8,17 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background-image: url("/static/images/puzzle-blue.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #1e3a8a;
 }
 
 .quiz-card {
