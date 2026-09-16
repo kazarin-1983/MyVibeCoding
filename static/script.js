@@ -79,6 +79,10 @@ async function showQuizPicker() {
 // ─── Запуск конкретной викторины ────────────────────────
 
 async function startQuiz(quizId, title) {
+    // ← ИЗМЕНЕНО: запоминаем последнюю тему, чтобы пережить F5
+    localStorage.setItem("lastQuizId", quizId);
+    localStorage.setItem("lastQuizTitle", title);
+
     currentQuizId = quizId;
     quizPicker.style.display = "none";
     gameBlock.style.display = "flex";
@@ -128,7 +132,7 @@ async function startQuiz(quizId, title) {
     }
 }
 
-// ─── Игровая логика (та же, что была) ────────────────────
+// ─── Игровая логика ─────────────────────────────────────
 
 function startRound() {
     isAnswered = false;
@@ -243,10 +247,22 @@ restartButton.addEventListener("click", async () => {
     startQuiz(currentQuizId, subtitle.textContent);
 });
 
+// ← ИЗМЕНЕНО: при смене темы забываем последнюю, чтобы F5 не возвращал в игру
 backButton.addEventListener("click", () => {
+    localStorage.removeItem("lastQuizId");
+    localStorage.removeItem("lastQuizTitle");
     showQuizPicker();
 });
 
 // ─── Точка входа ─────────────────────────────────────────
+// ← ИЗМЕНЕНО: вместо безусловного showQuizPicker() —
+// проверяем, была ли открыта тема, и восстанавливаем её.
 
-showQuizPicker();
+const lastQuizId = localStorage.getItem("lastQuizId");
+const lastQuizTitle = localStorage.getItem("lastQuizTitle");
+
+if (lastQuizId && lastQuizTitle) {
+    startQuiz(lastQuizId, lastQuizTitle);
+} else {
+    showQuizPicker();
+}
