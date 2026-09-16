@@ -60,7 +60,7 @@ async function showQuizPicker() {
     quizPicker.innerHTML = "";
     gameBlock.style.display = "none";
     quizPicker.style.display = "flex";
-    subtitle.textContent = "Выбери тему";
+    subtitle.textContent = "Вопросы для самых умных";
 
     try {
         const quizzes = await apiGet("/api/quizzes");
